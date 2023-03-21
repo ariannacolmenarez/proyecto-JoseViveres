@@ -1,0 +1,22 @@
+<?php 
+use PHPUnit\Framework\TestCase;
+require_once("./content/models/seguridadModel.php");
+
+class ConsultarRolTest extends TestCase{
+	private $seguridad;
+
+	public function setUp():void{
+		$this->seguridad = new seguridadModel();
+	}
+
+	//Roles consultados correctamente
+	public function testConsultaExitosa(){
+        $news = $this->seguridad->listarRoles();
+        foreach ($news as $item) {
+            $this->assertIsArray($item);
+        }
+	}
+
+}
+
+ ?>

@@ -1,0 +1,24 @@
+{
+    "name": "joseviveres/market",
+    "description": "Description of project market.",
+    "authors": [
+        {
+            "name": "arianna colmenarez",
+            "email": "aripaocol@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "content\\": "content/",
+            "content\\config\\settings\\": "content/config/settings/",
+            "content\\controllers\\": "content/controllers/",
+            "content\\models\\": "content/models/"
+        }
+    },
+    
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
+
